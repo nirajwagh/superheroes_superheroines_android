@@ -1,6 +1,7 @@
 package com.theminimaldeveloper.superheroes;
 
 import android.content.Context;
+import android.content.Intent;
 import android.media.Image;
 import android.text.Layout;
 import android.util.Log;
@@ -32,8 +33,6 @@ public class CharViewPagerAdapter extends PagerAdapter {
 
         layoutInflater =  (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
-//        Log.d("\n\nimageeeeee", imageIds[1]+ "");
-//        Log.d("\n\nimageeeeee111", charNames[1]);
     }
 
 
@@ -51,29 +50,25 @@ public class CharViewPagerAdapter extends PagerAdapter {
 
     @NonNull
     @Override
-    public Object instantiateItem(@NonNull ViewGroup container, final int position) {
-
-
+    public Object instantiateItem(@NonNull final ViewGroup container, final int position) {
 
         View view = layoutInflater.inflate(R.layout.char_vp_item, container ,false);
-
         ImageView img_char = (ImageView) view.findViewById(R.id.img_char);
         TextView txt_char_name = (TextView) view.findViewById(R.id.txt_char_name);
 
-
-
-        Log.d("\n\npos", position+"");
-
         img_char.setImageResource(imageIds[position]);
         txt_char_name.setText(charNames[position]);
-
 
         container.addView(view);
 
         img_char.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(context, charNames[position], Toast.LENGTH_SHORT).show();
+
+                Intent intent = new Intent(context, CharacterDetails.class);
+                intent.putExtra("characterName", charNames[position]);
+                context.startActivity(intent);
+
             }
         });
 

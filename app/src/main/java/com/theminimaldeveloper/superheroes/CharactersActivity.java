@@ -38,8 +38,8 @@ public class CharactersActivity extends AppCompatActivity {
         };
 
         charNames = new String[]{
-                "Black Panther", "Black Widow", "Bucky", "Captain America", "Captain Marvel",
-                "Deadpool", "Drax", "Falcon", "Groot", "Hawkeye", "Hulk", "Iron Man", "Korg",
+                "Black Panther", "Black Widow", "Bucky", "Captain America", "Captain Marvel (Carol Danvers)",
+                    "Deadpool", "Drax", "Falcon", "Groot", "Hawkeye", "Hulk", "Iron Man", "Korg",
                 "Loki", "Mantis", "Nebula", "Nick Fury", "Okoye", "Rocket Raccoon",
                 "Scarlet Witch", "Spider-Man", "Thanos", "Thor", "Vision", "Wasp", "Wolverine"
         };
