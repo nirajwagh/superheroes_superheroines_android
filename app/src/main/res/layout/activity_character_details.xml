@@ -17,11 +17,10 @@
 
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/img_character_icon"
             android:layout_width="180dp"
             android:layout_height="180dp"
             android:layout_margin="10dp"
-            android:src="@drawable/cp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
 
@@ -41,10 +40,10 @@
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+            app:layout_constraintTop_toBottomOf="@+id/img_character_icon" />
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardView3"
+            android:id="@+id/card_comics"
             android:layout_width="0dp"
             android:layout_height="60dp"
             android:layout_marginStart="10dp"
@@ -53,8 +52,8 @@
             android:layout_marginBottom="10dp"
             app:cardCornerRadius="10dp"
             app:cardElevation="10dp"
-            app:layout_constraintBottom_toTopOf="@+id/cardView5"
-            app:layout_constraintEnd_toStartOf="@+id/cardView4"
+            app:layout_constraintBottom_toTopOf="@+id/card_stories"
+            app:layout_constraintEnd_toStartOf="@+id/card_series"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintHorizontal_chainStyle="packed"
             app:layout_constraintStart_toStartOf="parent"
@@ -74,7 +73,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardView4"
+            android:id="@+id/card_series"
             android:layout_width="0dp"
             android:layout_height="60dp"
             android:layout_marginStart="10dp"
@@ -83,8 +82,8 @@
             app:cardElevation="10dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/cardView3"
-            app:layout_constraintTop_toTopOf="@+id/cardView3">
+            app:layout_constraintStart_toEndOf="@+id/card_comics"
+            app:layout_constraintTop_toTopOf="@+id/card_comics">
 
             <TextView
                 android:id="@+id/textView4"
@@ -98,7 +97,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardView6"
+            android:id="@+id/card_events"
             android:layout_width="0dp"
 
             android:layout_height="60dp"
@@ -108,8 +107,8 @@
             app:cardElevation="10dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/cardView5"
-            app:layout_constraintTop_toTopOf="@+id/cardView5">
+            app:layout_constraintStart_toEndOf="@+id/card_stories"
+            app:layout_constraintTop_toTopOf="@+id/card_stories">
 
             <TextView
                 android:id="@+id/textView6"
@@ -125,7 +124,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardView7"
+            android:id="@+id/card_marvel"
             android:layout_width="match_parent"
             android:layout_height="60dp"
 
@@ -139,7 +138,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/cardView5">
+            app:layout_constraintTop_toBottomOf="@+id/card_stories">
 
             <TextView
                 android:id="@+id/textView7"
@@ -155,7 +154,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardView5"
+            android:id="@+id/card_stories"
             android:layout_width="0dp"
             android:layout_height="60dp"
 
@@ -165,12 +164,12 @@
             android:layout_marginBottom="10dp"
             app:cardCornerRadius="10dp"
             app:cardElevation="10dp"
-            app:layout_constraintBottom_toTopOf="@+id/cardView7"
-            app:layout_constraintEnd_toStartOf="@+id/cardView6"
+            app:layout_constraintBottom_toTopOf="@+id/card_marvel"
+            app:layout_constraintEnd_toStartOf="@+id/card_events"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintHorizontal_chainStyle="packed"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/cardView3">
+            app:layout_constraintTop_toBottomOf="@+id/card_comics">
 
             <TextView
                 android:id="@+id/textView5"
@@ -195,7 +194,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/cardView7" />
+            app:layout_constraintTop_toBottomOf="@+id/card_marvel" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

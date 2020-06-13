@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_margin="10dp"
+    app:cardBackgroundColor="#302F2F"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp">
+
+    <TextView
+        android:id="@+id/txt_item_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:fontFamily="@font/ballo_semibold"
+        android:text="Avengers (2020)"
+        android:textAlignment="center"
+        android:textColor="#FBFBFB"
+        android:textSize="20sp" />
+</androidx.cardview.widget.CardView>

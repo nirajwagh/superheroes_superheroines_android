@@ -67,6 +67,7 @@ public class CharViewPagerAdapter extends PagerAdapter {
 
                 Intent intent = new Intent(context, CharacterDetails.class);
                 intent.putExtra("characterName", charNames[position]);
+                intent.putExtra("position", position);
                 context.startActivity(intent);
 
             }
