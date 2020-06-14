@@ -12,9 +12,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".YoutubeCharacterListActivity"></activity>
-        <activity android:name=".YoutubeVideosListActivity" />
-        <activity android:name=".HomeActivity" />
+        <activity android:name=".VideoPlayerActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity android:name=".YoutubeVideosListActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".HomeActivity"
+            android:screenOrientation="portrait"
+            />
         <activity
             android:name=".DisplayRecyclerView"
             android:screenOrientation="portrait" />
@@ -28,7 +34,7 @@
             android:name=".SplashActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".VideoPlayerActivity"
+            android:name=".YoutubeCharacterListActivity"
             android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
 
             >
