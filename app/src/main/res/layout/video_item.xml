@@ -5,47 +5,50 @@
     android:id="@+id/card_video_item"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="10dp"
-    android:padding="10dp"
+    android:layout_margin="15dp"
     app:cardElevation="15dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:padding="10dp">
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/img_video_thumbnail"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:layout_height="250dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:srcCompat="@tools:sample/avatars" />
+            tools:srcCompat="@drawable/black_panther_icon" />
 
         <TextView
-            android:id="@+id/textView10"
-            android:layout_width="wrap_content"
+            android:id="@+id/txt_video_channel_name"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:text="Iron Man vs F-22 Raptor - Dogfight Scene - Iron Man (2008) Movie CLIP HD"
-            android:textColor="#3A3838"
-            android:textSize="18sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView" />
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppinssemibold"
             android:text="Channel: TopMovieClips"
+            android:textAlignment="viewStart"
             android:textColor="#3A3838"
-            android:textSize="18sp"
+            android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView10" />
+            app:layout_constraintTop_toBottomOf="@+id/txt_video_title" />
+
+        <TextView
+            android:id="@+id/txt_video_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppinssemibold"
+            android:text="Iron Man vs F-22 Raptor - Dogfight Scene - Iron Man (2008) Movie CLIP HD"
+            android:textAlignment="viewStart"
+            android:textColor="#3A3838"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_video_thumbnail" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.cardview.widget.CardView>

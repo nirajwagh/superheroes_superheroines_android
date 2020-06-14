@@ -13,6 +13,7 @@ android {
 
         resValue  "string", "marvel_private_api_key", MARVEL_PRIVATE_API_KEY
         resValue  "string", "marvel_public_api_key", MARVEL_PUBLIC_API_KEY
+        resValue  "string", "youtube_api_key", YOUTUBE_API_KEY
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -37,6 +38,9 @@ dependencies {
     implementation 'com.android.volley:volley:1.1.1'
     implementation 'com.mikhaellopez:circularimageview:4.2.0'
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    implementation 'com.pierfrancescosoffritti.androidyoutubeplayer:core:10.0.5'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
