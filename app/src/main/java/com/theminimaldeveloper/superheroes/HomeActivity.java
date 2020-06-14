@@ -29,7 +29,7 @@ public class HomeActivity extends AppCompatActivity {
 
     public void youtubeVideosClicked(View view) {
 
-        startActivity(new Intent(HomeActivity.this, CharactersActivity.class));
+        startActivity(new Intent(HomeActivity.this, YoutubeCharacterListActivity.class));
 
     }
 }

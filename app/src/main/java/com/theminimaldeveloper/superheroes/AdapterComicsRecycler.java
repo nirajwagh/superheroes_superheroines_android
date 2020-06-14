@@ -24,7 +24,7 @@ public class AdapterComicsRecycler extends RecyclerView.Adapter<AdapterComicsRec
     public viewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
         LayoutInflater layoutInflater= LayoutInflater.from(parent.getContext());
-        View view = layoutInflater.inflate(R.layout.comic_item, parent,false);
+        View view = layoutInflater.inflate(R.layout.character_details_item, parent,false);
         return new viewHolder(view);
 
     }
