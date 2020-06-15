@@ -43,8 +43,6 @@ public class CharacterDetails extends AppCompatActivity {
             R.drawable.vision_icon, R.drawable.wasp_icon, R.drawable.wolverine_icon
     };
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
