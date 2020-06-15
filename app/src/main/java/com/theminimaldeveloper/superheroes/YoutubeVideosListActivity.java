@@ -30,7 +30,7 @@ public class YoutubeVideosListActivity extends AppCompatActivity {
 
         recycler_character_videos = findViewById(R.id.recycler_character_videos);
 
-        //Use your own Youtube data API key here.
+        //Use your own Youtube data API key here
         YOUTUBE_API_KEY = getString(R.string.youtube_api_key);
         
         String characterName = getIntent().getStringExtra("characterName");

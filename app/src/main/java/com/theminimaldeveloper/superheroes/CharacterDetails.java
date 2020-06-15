@@ -68,10 +68,10 @@ public class CharacterDetails extends AppCompatActivity {
         timeStamp = timeStamp.replaceAll("\\s", "");
 
 
-        //Use your own Marvel private API key here.
+        //Use your own Marvel private API key here
         String MARVEL_PRIVATE_API_KEY = getString(R.string.marvel_private_api_key);
 
-        //Use your own Marvel public API key here.
+        //Use your own Marvel public API key here
         String MARVEL_PUBLIC_API_KEY = getString(R.string.marvel_public_api_key);
 
         String FinalAPIHashingString = timeStamp+MARVEL_PRIVATE_API_KEY+MARVEL_PUBLIC_API_KEY;
