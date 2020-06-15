@@ -32,10 +32,8 @@ public class YoutubeCharacterListActivity extends AppCompatActivity {
         setContentView(R.layout.activity_youtube_character_list);
 
         recycler_char_list_video = findViewById(R.id.recycler_char_list_video);
-
         recycler_char_list_video.setLayoutManager(new GridLayoutManager(this, 2));
         recycler_char_list_video.setAdapter(new AdapterCharacterListVideo(this, character_icon_ids, charNames));
-
 
     }
 }

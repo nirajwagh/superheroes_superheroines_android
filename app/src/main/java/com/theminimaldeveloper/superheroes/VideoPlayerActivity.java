@@ -20,23 +20,19 @@ public class VideoPlayerActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_video_player);
 
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
         youtube_player = findViewById(R.id.youtube_player);
-
-        String videoId = getIntent().getStringExtra("videoId");
+        final String videoId = getIntent().getStringExtra("videoId");
 
         getLifecycle().addObserver(youtube_player);
         youtube_player.enterFullScreen();
-
-
-
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
 
         youtube_player.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
             @Override
             public void onReady(@NotNull YouTubePlayer youTubePlayer) {
 
+                youTubePlayer.loadVideo(videoId ,0);
 
-                youTubePlayer.loadVideo("gVpWZCSqQEA" ,0);
             }
         });
     }

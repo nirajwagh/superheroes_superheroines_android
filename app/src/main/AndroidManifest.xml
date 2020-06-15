@@ -13,8 +13,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".VideoPlayerActivity"
-            android:screenOrientation="portrait"
-            ></activity>
+            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+            />
         <activity android:name=".YoutubeVideosListActivity"
             android:screenOrientation="portrait"
             />
@@ -31,12 +31,11 @@
             android:name=".CharactersActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".SplashActivity"
+            android:name=".YoutubeCharacterListActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".YoutubeCharacterListActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
-
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait"
             >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

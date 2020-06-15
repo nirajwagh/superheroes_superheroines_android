@@ -3,9 +3,7 @@ package com.theminimaldeveloper.superheroes;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
 import android.os.Bundle;
-
 import java.util.ArrayList;
 
 public class DisplayRecyclerView extends AppCompatActivity {
@@ -20,12 +18,8 @@ public class DisplayRecyclerView extends AppCompatActivity {
         comicsRecycler = findViewById(R.id.comics_recycler);
 
         ArrayList<String> ItemsList = getIntent().getStringArrayListExtra("ItemsList");
-
         comicsRecycler.setLayoutManager(new LinearLayoutManager(this));
         comicsRecycler.setAdapter(new AdapterComicsRecycler(ItemsList));
-
-
-
 
     }
 }

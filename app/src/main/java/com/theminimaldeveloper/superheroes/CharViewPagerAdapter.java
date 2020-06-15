@@ -2,29 +2,21 @@ package com.theminimaldeveloper.superheroes;
 
 import android.content.Context;
 import android.content.Intent;
-import android.media.Image;
-import android.text.Layout;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
-
 import androidx.annotation.NonNull;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewpager.widget.PagerAdapter;
 
-import java.util.Arrays;
-
 public class CharViewPagerAdapter extends PagerAdapter {
 
-     Context context;
+    Context context;
     private String[] charNames;
     private int[] imageIds;
-     LayoutInflater layoutInflater;
-
+    LayoutInflater layoutInflater;
 
     public CharViewPagerAdapter(Context context, String[] charNames, int[] imageIds) {
         this.context = context;
@@ -34,9 +26,6 @@ public class CharViewPagerAdapter extends PagerAdapter {
         layoutInflater =  (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
     }
-
-
-
 
     @Override
     public int getCount() {
@@ -58,7 +47,6 @@ public class CharViewPagerAdapter extends PagerAdapter {
 
         img_char.setImageResource(imageIds[position]);
         txt_char_name.setText(charNames[position]);
-
         container.addView(view);
 
         img_char.setOnClickListener(new View.OnClickListener() {
