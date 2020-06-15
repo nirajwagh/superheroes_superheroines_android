@@ -1,15 +1,12 @@
 package com.theminimaldeveloper.superheroes;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
-
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.YouTubePlayer;
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.listeners.AbstractYouTubePlayerListener;
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView;
 
-import org.jetbrains.annotations.NotNull;
 
 public class VideoPlayerActivity extends AppCompatActivity {
 
@@ -29,10 +26,8 @@ public class VideoPlayerActivity extends AppCompatActivity {
 
         youtube_player.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
             @Override
-            public void onReady(@NotNull YouTubePlayer youTubePlayer) {
-
+            public void onReady(YouTubePlayer youTubePlayer) {
                 youTubePlayer.loadVideo(videoId ,0);
-
             }
         });
     }
