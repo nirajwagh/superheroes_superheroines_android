@@ -30,7 +30,9 @@ public class YoutubeVideosListActivity extends AppCompatActivity {
 
         recycler_character_videos = findViewById(R.id.recycler_character_videos);
 
+        //Use your own Youtube data API key here.
         YOUTUBE_API_KEY = getString(R.string.youtube_api_key);
+        
         String characterName = getIntent().getStringExtra("characterName");
         characterName = characterName.replaceAll("\\s", "%20");
         String baseUrl = "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=20&q=";
