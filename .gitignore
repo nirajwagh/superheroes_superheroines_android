@@ -13,3 +13,12 @@
 .externalNativeBuild
 .cxx
 /gradle.properties
+.idea/
+*.apk
+*.aab
+APK/
+apk download/
+app/release/
+/release/
+*.jks
+*.keystore

@@ -22,7 +22,7 @@ public class VideoPlayerActivity extends AppCompatActivity {
         final String videoId = getIntent().getStringExtra("videoId");
 
         getLifecycle().addObserver(youtube_player);
-        youtube_player.enterFullScreen();
+      //  youtube_player.enterFullScreen();
 
         youtube_player.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
             @Override
